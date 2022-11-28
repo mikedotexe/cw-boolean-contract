@@ -1,0 +1,1 @@
+cc45e119bb16f4e6afa4cb969e1804ef324a9b449d92afa0f6ce8f2198ce043c  ./target/wasm32-unknown-unknown/release/boolean_contract.wasm

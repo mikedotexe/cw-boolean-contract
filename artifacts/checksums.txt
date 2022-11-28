@@ -1,0 +1,2 @@
+4506d5a85a7868285bc810a66a2982ea08a8c681a52958ae37cd6dcd5bf55c8d  boolean_contract-aarch64.wasm
+d184af302ae43bb5502be571a16ccc9dc0193e90bf0584acae9a63813def5b93  boolean_contract.wasm
