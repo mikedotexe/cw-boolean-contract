@@ -1,5 +1,5 @@
 [package]
-name = "boolean-contract"
+name = "cw-boolean-contract"
 description = "Simple CosmWasm contract that stores and returns a boolean"
 license = "MIT OR Apache-2.0"
 authors = ["Mike Purvis @mikedotexe"]
