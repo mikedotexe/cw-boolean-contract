@@ -4,7 +4,7 @@ use crate::msgs::query_msg::QueryMsg;
 use cosmwasm_std::entry_point;
 use cosmwasm_std::{to_binary, Binary, Deps, Env, StdResult};
 
-#[entry_point]
+#[cfg_attr(not(feature = "library"), entry_point)]
 pub fn query(deps: Deps, env: Env, msg: QueryMsg) -> StdResult<Binary> {
     // inside this match, we list all the queries we have in this contract
     // we only have one, GetValue, which is turned into snake case,
