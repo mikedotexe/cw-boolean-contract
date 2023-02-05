@@ -27,6 +27,7 @@ schemars = "0.8.11"
 # Tracking this issue: https://github.com/CosmWasm/cw-storage-plus/issues/19
 cw-storage-plus = "0.16.0"
 thiserror = { version = "1.0.37" }
+mod-sdk = "0.1.0"
 
 [dev-dependencies]
 # no dev dependencies yet, but consider cw-multi-test

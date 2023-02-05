@@ -1,12 +1,16 @@
 use crate::state::CONFIG;
-use cosmwasm_std::{Deps, Env, StdError, StdResult};
+use cosmwasm_std::{Binary, Deps, Env, StdError, StdResult};
+use mod_sdk::types::QueryResponse;
 
-pub fn query(deps: Deps, _env: Env) -> StdResult<bool> {
+pub fn query(deps: Deps, _env: Env) -> StdResult<QueryResponse> {
     // Set our state variable according to the input
     let config = CONFIG.load(deps.storage);
 
     match config {
-        Ok(c) => Ok(c.is_true),
+        Ok(c) => Ok(QueryResponse {
+            result: c.is_true,
+            data: Binary::default(),
+        }),
         Err(_) => Err(StdError::generic_err(
             "Could not load config which has the boolean",
         )),
