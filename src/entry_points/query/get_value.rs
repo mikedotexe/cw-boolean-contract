@@ -2,6 +2,7 @@ use crate::state::CONFIG;
 use cosmwasm_std::{Binary, Deps, Env, StdError, StdResult};
 use mod_sdk::types::QueryResponse;
 
+/// Logic for the [GetValue](crate::msgs::query_msg::QueryMsg::GetValue) (`get_value`) method
 pub fn query(deps: Deps, _env: Env) -> StdResult<QueryResponse> {
     // Set our state variable according to the input
     let config = CONFIG.load(deps.storage);

@@ -8,7 +8,6 @@ edition = "2021"
 readme = "README.md"
 repository = "https://github.com/mikedotexe/cw-boolean-contract"
 keywords = ["cosmwasm", "smart-contracts", "interchain", "cosmos", "blockchain"]
-maintenance = { status = "as-is" }
 
 [lib]
 crate-type = ["cdylib", "rlib"]

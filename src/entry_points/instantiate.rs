@@ -6,6 +6,8 @@ use cosmwasm_std::entry_point;
 use cosmwasm_std::{DepsMut, Env, MessageInfo, Response};
 use cw2::set_contract_version;
 
+/// Instantiate entry point
+/// See the instantiate message and fields in [InstantiateMsg](InstantiateMsg)
 #[cfg_attr(not(feature = "library"), entry_point)]
 pub fn instantiate(
     deps: DepsMut,

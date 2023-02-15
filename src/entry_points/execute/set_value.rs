@@ -1,7 +1,10 @@
+//! Execute logic that explicitly sets the state boolean to `true` or `false`
+
 use crate::errors::ContractError;
 use crate::state::{Config, CONFIG};
 use cosmwasm_std::{DepsMut, Env, MessageInfo, Response};
 
+/// Logic for the [SetValue](crate::msgs::execute_msg::ExecuteMsg::SetValue) (`set_value`) method
 pub fn execute(
     deps: DepsMut,
     _env: Env,
