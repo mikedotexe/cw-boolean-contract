@@ -185,7 +185,7 @@ dependencies = [
 
 [[package]]
 name = "cw-boolean-contract"
-version = "0.1.2"
+version = "0.1.3"
 dependencies = [
  "cosmwasm-schema",
  "cosmwasm-std",
